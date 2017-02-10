@@ -1,0 +1,9 @@
+<FilesMatch ".(eot|ttf|otf|woff|svg)">
+	Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+
+</IfModule>

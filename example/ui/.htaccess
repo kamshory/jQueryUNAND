@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^assets/(.+)$  ../assets/$1 [L,NC,QSA]
+RewriteRule .*/assets/(.+)$  ../assets/$1 [L,NC,QSA]
+
+</IfModule>

@@ -1,0 +1,350 @@
+@charset "utf-8";
+
+@font-face {
+font-family: 'pemayungweb';
+src: url('fonts/pemayungweb.eot');
+src: local('?'), url('fonts/pemayungweb.woff') format('woff'), url('fonts/pemayungweb.ttf') format('truetype'), url('fonts/pemayungweb.svg') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+body{
+	font-family:sans-serif, Geneva, sans-serif;
+	color:#555555;
+	font-size:13px;
+}
+body, form{
+	margin:0px;
+	padding:0px;
+}
+a{
+	text-decoration:none;
+	color:#36F;
+}
+.clear{
+	clear:both;
+}
+.all{
+	background-color:#1DACFA;
+	padding:10px 10px 0px 10px;
+}
+.wrapper{
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	box-shadow: 0px 0px 3px #555555;
+}
+.menu{
+}
+.menu .menu-inner{
+	background-color:#065F99;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#065F99),to(#055285));
+	background-image:-webkit-linear-gradient(#065F99,#055285);
+	background-image:-moz-linear-gradient(#065F99,#055285);
+	background-image:-ms-linear-gradient(#065F99,#055285);
+	background-image:-o-linear-gradient(#065F99,#055285);
+	background-image:linear-gradient(#065F99,#055285);
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#065F99', endColorstr='#055285'); /* IE6 & IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#065F99', endColorstr='#055285')"; /* IE8 */
+	padding:10px 20px;
+}
+.menu-rounded .menu-inner{
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+}
+.menu-fixed{
+	height:40px;
+}
+.menu-fixed .menu-inner{
+	position:fixed;
+	top:0px;
+	/* Firefox */
+	width: -moz-calc(100% - 20px);
+	/* WebKit */
+	width: -webkit-calc(100% - 20px);
+	/* Opera */
+	width: -o-calc(100% - 20px);
+	/* Standard */
+	width: calc(100% - 20px);
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+}
+.menu ul{
+	margin:0px;
+	padding:0px;
+}
+.menu li{
+	list-style-type:none;
+	display:inline;
+	margin:0px 10px 0px 0px;
+	padding:0px;
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-shadow:1px 1px 0px #555555;
+}
+.menu a{
+	color:#EEEEEE;
+	text-decoration:none;
+	white-space:nowrap;
+}
+.menu a:hover{
+	color:#FAFAFA;
+}
+div.header{
+	background-color:#333;
+	padding:10px 20px;
+	color:#FAFAFA;
+}
+div.header h1{
+	margin:0px;
+	padding:0px;
+}
+.middle{
+	background-color:#FFF;
+}
+.mainbar{
+	float:left;
+	width:70%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:20px 0px 20px 20px;
+}
+.sidebar{
+	float:right;
+	width:28%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:20px 20px 20px 0px;
+}
+.middle-docs .mainbar{
+	float:right;
+	width:72%;
+	padding:20px 20px 20px 0px;
+}
+.middle-docs .sidebar{
+	float:left;
+	width:26%;
+	padding:20px 20px 20px 20px;
+	background-color:#F8F8F8;
+}
+
+.mainbar h1, .sidebar h1{
+	margin:0px;
+	padding:0px 0px 4px 0px;
+}
+.sidebar h1{
+	font-weight:normal;
+}
+@media screen and (max-width:1000px){
+.middle .sidebar{
+	width:100%;
+	background-color:#DDDDDD;
+	padding:20px;
+}
+.middle .mainbar{
+	width:100%;
+	padding:20px;
+}
+}
+div.footer{
+	background-color:#333;
+	padding:10px 10px;
+	color:#FAFAFA;
+}
+div.footer a{
+	color:#FAFAFA;
+	text-decoration:none;
+}
+div.footer a:hover{
+	color:#FFFFFF;
+}
+
+
+.mainbar h1{
+	font-size:36px;
+	font-weight:normal;
+	color:#00546C;
+}
+.mainbar h2{
+	font-size:26px;
+	font-weight:normal;
+	color:#148EE0;
+}
+
+
+.scroll-up{
+	position:fixed;
+	bottom:50px;
+	margin-left:20px;
+	display:none;
+}
+@media screen and (max-width:1000px){
+.scroll-up{
+	right:30px;
+}
+}
+.scroll-up a{
+	display:inline-block;
+	width:40px;
+	height:40px;
+	border:1px solid #EEEEEE;
+	background-color:#FAFAFA;
+	border-radius:20px;
+	padding:10px;
+	text-align:center;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	color:#555555;
+}
+
+
+
+pre{
+	background-color:#FAFAFA;
+	border:1px solid #F5F5F5;
+	padding:10px;
+	overflow-x:auto;
+}
+
+.row-table{
+	border-collapse:collapse;
+}
+.row-table td{
+	padding:6px 6px;
+}
+.row-table tbody tr:nth-child(odd) td{
+	background-color:#FEFEFE;
+}
+.row-table tbody tr:nth-child(even) td{
+	background-color:#FAFAFA;
+}
+.row-table thead td {
+    border-color: #DDD;
+    padding: 6px 6px;
+    background-color: #059CED;
+    background-image: linear-gradient(#059CED, #0482C6);
+    font-weight: bold;
+    color: #FAFAFA;
+    white-space: nowrap;
+}
+
+
+.mainbar p, .mainbar li{
+	line-height:1.5;
+}
+.bold-item li::first-line{
+	font-weight:bold;
+}
+ul.tree-view{
+	margin:0px;
+	padding:0px;
+}
+ul.tree-view li{
+	line-height:1.5;
+}
+ul.tree-view li a{
+	display:block;
+}
+ul.tree-view > li{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+ul.tree-view > li > ul{
+	margin:0px 0px 0px 20px;
+	padding:0px;
+}
+ul.tree-view > li > ul > li{
+	margin:0px;
+	padding:0px;
+	list-style-type:square;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], button{
+	border:1px solid #BBBBBB;
+	padding:4px 12px;
+	background-color:#F8F8F8;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#F8F8F8),to(#D5D5D5));
+	background-image:-webkit-linear-gradient(#F8F8F8,#D5D5D5);
+	background-image:-moz-linear-gradient(#F8F8F8,#D5D5D5);
+	background-image:-ms-linear-gradient(#F8F8F8,#D5D5D5);
+	background-image:-o-linear-gradient(#F8F8F8,#D5D5D5);
+	background-image:linear-gradient(#F8F8F8,#D5D5D5);
+	filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F8F8F8', endColorstr='#D5D5D5'); /* IE6 & IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F8F8F8', endColorstr='#D5D5D5')"; /* IE8 */
+	border-radius:3px;
+	color:#555555;
+	text-shadow:1px 1px 0px #FFFFFF;
+}
+
+
+.icon{
+	font-family:'pemayungweb';
+}
+.share-to-network .icon{
+	font-size:32px;
+}
+
+.icon.menu:before{
+	content:"\3d";
+}
+.icon.home:before{
+	content:"\f004";
+}
+.icon.pemayungweb:before{
+	content:"\f005";
+}
+/*social network*/
+.icon.planetbiru:before{content:"\f1d1"}
+.icon.facebook:before{content:"\f1d2"}
+.icon.twitter:before{content:"\f1d3"}
+.icon.pinterest:before{content:"\f1d4"}
+.icon.googleplus:before{content:"\f1d5"}
+.icon.tumblr:before{content:"\f1d6"}
+.icon.tumbleupon:before{content:"\f1d7"}
+.icon.wordpress:before{content:"\f1d8"}
+.icon.instagram:before{content:"\f1d9"}
+.icon.dribbble:before{content:"\f1da"}
+.icon.vimeo:before{content:"\f1db"}
+.icon.linkedin:before{content:"\f1dc"}
+.icon.rss:before{content:"\f1dd"}
+.icon.deviantart:before{content:"\f1de"}
+.icon.share:before{content:"\f1df"}
+.icon.myspace:before{content:"\f1e0"}
+.icon.skype:before{content:"\f1e1"}
+.icon.youtube:before{content:"\f1e2"}
+.icon.picassa:before{content:"\f1e3"}
+.icon.googledrive:before{content:"\f1e4"}
+.icon.flickr:before{content:"\f1e5"}
+.icon.blogger:before{content:"\f1e6"}
+.icon.spotify:before{content:"\f1e7"}
+.icon.delicious:before{content:"\f1e8"}
+.icon.planetbiru-circle:before{content:"\f1f1"}
+.icon.facebook-circle:before{content:"\f1f2"}
+.icon.twitter-circle:before{content:"\f1f3"}
+.icon.pinterest-circle:before{content:"\f1f4"}
+.icon.googleplus-circle:before{content:"\f1f5"}
+.icon.tumblr-circle:before{content:"\f1f6"}
+.icon.tumbleupon-circle:before{content:"\f1f7"}
+.icon.wordpress-circle:before{content:"\f1f8"}
+.icon.instagram-circle:before{content:"\f1f9"}
+.icon.dribbble-circle:before{content:"\f1fa"}
+.icon.vimeo-circle:before{content:"\f1fb"}
+.icon.linkedin-circle:before{content:"\f1fc"}
+.icon.rss-circle:before{content:"\f1fd"}
+.icon.deviantart-circle:before{content:"\f1fe"}
+.icon.share-circle:before{content:"\f1ff"}
+.icon.myspace-circle:before{content:"\f200"}
+.icon.skype-circle:before{content:"\f201"}
+.icon.youtube-circle:before{content:"\f202"}
+.icon.picassa-circle:before{content:"\f203"}
+.icon.googledrive-circle:before{content:"\f204"}
+.icon.flickr-circle:before{content:"\f205"}
+.icon.blogger-circle:before{content:"\f206"}
+.icon.spotify-circle:before{content:"\f207"}
+.icon.delicious-circle:before{content:"\f208"}
+/*social network*/

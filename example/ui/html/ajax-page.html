@@ -1,0 +1,51 @@
+
+  <h1>AJAX Page</h1>
+  
+  
+  
+  
+  <h2>Load Page with AJAX</h2>
+  <h3>Code</h3>
+  <div class="code-container">
+  <pre  id="pre2" class="code">&lt;!DOCTYPE html&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/css/style.css" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/font/open-sans/index.css" /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/icon.css&quot; /&gt;
+    &lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/ie.css&quot; /&gt;
+    &lt;![endif]--&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.unand.js"&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    var mui;
+    window.onload = function()
+    {
+        mui = new mobileUI('*');
+    }
+    &lt;/script&gt;
+&lt;title&gt;jQuery Unand&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div data-role="header" data-theme="a" data-gradien="true"&gt; 
+    &lt;h1&gt;Page Header&lt;/h1&gt;
+    &lt;/div&gt;
+
+    &lt;nav data-role=&quot;navbar&quot; data-mark-visited=&quot;true&quot;&gt;
+        &lt;a href=&quot;#&quot; data-rel=&quot;ajax-get&quot; data-target-container=&quot;#ajax-content&quot; data-location-async=&quot;ajax-page-01.html&quot;&gt;&lt;span class=&quot;icon globe&quot;&gt;&lt;/span&gt; Page 1&lt;/a&gt;
+        &lt;a href=&quot;#&quot; data-rel=&quot;ajax-get&quot; data-target-container=&quot;#ajax-content&quot; data-location-async=&quot;ajax-page-02.html&quot;&gt;&lt;span class=&quot;icon mail&quot;&gt;&lt;/span&gt; Page 2&lt;/a&gt;
+        &lt;a href=&quot;#&quot; data-rel=&quot;ajax-get&quot; data-target-container=&quot;#ajax-content&quot; data-location-async=&quot;ajax-page-03.html&quot;&gt;&lt;span class=&quot;icon cog&quot;&gt;&lt;/span&gt; Page 3&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;div id=&quot;ajax-content&quot; data-role="content"&gt;
+
+    &lt;/div&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+  <form method="post" action="test.php" target="_blank"><input name="code" value="" type="hidden"><input name="submit" value="Test" onclick="copyCode(this, 'pre2')" type="submit"></form>
+</div>
+

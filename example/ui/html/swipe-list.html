@@ -1,0 +1,904 @@
+
+  <h1>Swipe List</h1>
+  
+  
+  
+  <h2>Swipe List with Static Aside</h2>
+  <h3>Code</h3>
+<div class="code-container">
+<pre  id="pre0" class="code">&lt;!DOCTYPE html&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/css/style.css" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/font/open-sans/index.css" /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/icon.css&quot; /&gt;
+    &lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/ie.css&quot; /&gt;
+    &lt;![endif]--&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.unand.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+    var mui;
+    window.onload = function()
+    {
+        mui = new mobileUI('aside swipe-list');
+    }
+    &lt;/script&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+[data-role=&quot;swipe-list&quot;] &gt; li &gt; div{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	text-align:center;
+}
+.tools{
+	padding:4px 0px;
+}
+&lt;/style&gt;
+&lt;title&gt;jQuery Unand&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;aside data-transition="left" data-role="aside" data-section="aside1" data-aside-float="false" data-active="false"&gt;
+	   &lt;header data-title="Aside" onclick="mui.closeAside('aside1')"&gt;
+    &lt;nav data-float="right"&gt;
+    &lt;a href="javascript:mui.closeAside('aside1')"&gt;&lt;span class="icon remove"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;h3&gt;Aside Header&lt;/h3&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+    &lt;div data-role="content"&gt;
+    Aside content here
+    &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;/aside&gt;
+
+    &lt;div data-role="header" data-theme="a" data-gradien="true"&gt; 
+    &lt;a href="#aside1" data-role="toolbar-icon" data-position="float-left" data-rel="aside"&gt;&lt;span class="icon chevron-right icon-24"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;h1&gt;Page Header&lt;/h1&gt;
+    &lt;/div&gt;
+
+
+  &lt;div data-role=&quot;content&quot;&gt;
+    &lt;ul data-role=&quot;swipe-list&quot;&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-hijau.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/tomat2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Tomat&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-hijau2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/cabai-besar.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Cabai Besar&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/grapes.png&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kacang-hijau.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kacang Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/pisang.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Pisang&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/jagung.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Jagung&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kedondong4.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kedondong&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/cabai-besar-2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Cabai Besar&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kubis.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kubis&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/mangga.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Mangga&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/sawi-putih.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Sawi Putih&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/manggis.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Manggis&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/tomat1.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Tomat&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;  
+  &lt;/div&gt;</p>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<form method="post" action="test.php" target="_blank"><input name="code" value="" type="hidden"><input name="submit" value="Test" onclick="copyCode(this, 'pre0')" type="submit"></form>
+</div>
+
+
+  <h2>Swipe Page with Resizeable Page Aside</h2>
+  <h3>Code</h3>
+<div class="code-container">
+<pre  id="pre1" class="code">&lt;!DOCTYPE html&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/css/style.css" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/font/open-sans/index.css" /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/icon.css&quot; /&gt;
+    &lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/ie.css&quot; /&gt;
+    &lt;![endif]--&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.unand.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+    var mui;
+    window.onload = function()
+    {
+        mui = new mobileUI('aside swipe-list');
+    }
+    &lt;/script&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+[data-role=&quot;swipe-list&quot;] &gt; li &gt; div{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	text-align:center;
+}
+.tools{
+	padding:4px 0px;
+}
+&lt;/style&gt;
+&lt;title&gt;jQuery Unand&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;aside data-transition="left" data-role="aside" data-section="aside1" data-aside-float="false" data-active="false" data-resize=&quot;true&quot;&gt;
+	   &lt;header data-title="Aside" onclick="mui.closeAside('aside1')"&gt;
+    &lt;nav data-float="right"&gt;
+    &lt;a href="javascript:mui.closeAside('aside1')"&gt;&lt;span class="icon remove"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;h3&gt;Aside Header&lt;/h3&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+    &lt;div data-role="content"&gt;
+    Aside content here
+    &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;/aside&gt;
+
+    &lt;div data-role="header" data-theme="a" data-gradien="true"&gt; 
+    &lt;a href="#aside1" data-role="toolbar-icon" data-position="float-left" data-rel="aside"&gt;&lt;span class="icon chevron-right icon-24"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;h1&gt;Page Header&lt;/h1&gt;
+    &lt;/div&gt;  
+  &lt;div data-role=&quot;content&quot;&gt;
+    &lt;ul data-role=&quot;swipe-list&quot;&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-hijau.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/tomat2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Tomat&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-hijau2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/cabai-besar.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Cabai Besar&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/grapes.png&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kacang-hijau.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kacang Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/pisang.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Pisang&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/jagung.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Jagung&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kedondong4.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kedondong&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/cabai-besar-2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Cabai Besar&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kubis.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kubis&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/mangga.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Mangga&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/sawi-putih.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Sawi Putih&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/manggis.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Manggis&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/tomat1.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Tomat&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;  
+  &lt;/div&gt;</p>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<form method="post" action="test.php" target="_blank"><input name="code" value="" type="hidden"><input name="submit" value="Test" onclick="copyCode(this, 'pre1')" type="submit"></form>
+</div>
+
+
+
+  <h2>Swipe Page with Callback Function</h2>
+  <h3>Code</h3>
+<div class="code-container">
+<pre  id="pre1" class="code">&lt;!DOCTYPE html&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/css/style.css" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/font/open-sans/index.css" /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/icon.css&quot; /&gt;
+    &lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/ie.css&quot; /&gt;
+    &lt;![endif]--&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.unand.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+    var mui;
+    window.onload = function()
+    {
+        mui = new mobileUI('aside swipe-list');
+    }
+    function thecallback(index)
+    {
+        $('.status').html('Current index is '+index);
+    }
+    &lt;/script&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+[data-role=&quot;swipe-list&quot;] &gt; li &gt; div{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	text-align:center;
+}
+.tools{
+	padding:4px 0px;
+}
+&lt;/style&gt;
+&lt;title&gt;jQuery Unand&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;aside data-transition="left" data-role="aside" data-section="aside1" data-aside-float="false" data-active="false" data-resize=&quot;true&quot;&gt;
+	   &lt;header data-title="Aside" onclick="mui.closeAside('aside1')"&gt;
+    &lt;nav data-float="right"&gt;
+    &lt;a href="javascript:mui.closeAside('aside1')"&gt;&lt;span class="icon remove"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;h3&gt;Aside Header&lt;/h3&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+    &lt;div data-role="content"&gt;
+    Aside content here
+    &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;/aside&gt;
+
+    &lt;div data-role="header" data-theme="a" data-gradien="true"&gt; 
+    &lt;a href="#aside1" data-role="toolbar-icon" data-position="float-left" data-rel="aside"&gt;&lt;span class="icon chevron-right icon-24"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;h1&gt;Page Header&lt;/h1&gt;
+    &lt;/div&gt;  
+  &lt;div data-role=&quot;content&quot;&gt;
+    &lt;ul data-role=&quot;swipe-list&quot; data-callback=&quot;thecallback&quot;&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-hijau.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/tomat2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Tomat&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-hijau2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/cabai-besar.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Cabai Besar&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/grapes.png&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kacang-hijau.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kacang Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/pisang.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Pisang&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/jagung.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Jagung&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kedondong4.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kedondong&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/cabai-besar-2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Cabai Besar&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kubis.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kubis&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/mangga.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Mangga&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/sawi-putih.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Sawi Putih&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/manggis.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Manggis&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/tomat1.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Tomat&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;status&quot; style=&quot;padding:10px 0px&quot;&gt;
+    &lt;/div&gt;  
+  &lt;/div&gt;</p>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<form method="post" action="test.php" target="_blank"><input name="code" value="" type="hidden"><input name="submit" value="Test" onclick="copyCode(this, 'pre1')" type="submit"></form>
+</div>
+
+
+
+<h2>Swipe List with AJAX</h2>
+<h3>Code</h3>
+<div class="code-container">
+  <pre id="pre2" class="code">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, minimum-scale=1.0, maximum-scale=1.0&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/style.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/open-sans/index.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/icon.css&quot; /&gt;
+    &lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/ie.css&quot; /&gt;
+    &lt;![endif]--&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/jquery.unand.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    var mui;
+    window.onload = function()
+    {
+        mui = new mobileUI('aside swipe-list');
+    }
+    &lt;/script&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+[data-role=&quot;swipe-list&quot;] &gt; li &gt; div{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	text-align:center;
+}
+.tools{
+	padding:4px 0px;
+}
+&lt;/style&gt;
+&lt;title&gt;jQuery Unand&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;aside data-transition=&quot;left&quot; data-role=&quot;aside&quot; data-section=&quot;aside1&quot; data-aside-float=&quot;false&quot; data-active=&quot;false&quot; data-resize=&quot;true&quot;&gt;
+	   &lt;header data-title=&quot;Aside&quot; onclick=&quot;mui.closeAside('aside1')&quot;&gt;
+    &lt;nav data-float=&quot;right&quot;&gt;
+    &lt;a href=&quot;javascript:mui.closeAside('aside1')&quot;&gt;&lt;span class=&quot;icon remove&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;h3&gt;Aside Header&lt;/h3&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+    &lt;div data-role=&quot;content&quot;&gt;
+    Aside content here
+    &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;/aside&gt;
+
+    &lt;div data-role=&quot;header&quot; data-theme=&quot;a&quot; data-gradien=&quot;true&quot;&gt; 
+    &lt;a href=&quot;#aside1&quot; data-role=&quot;toolbar-icon&quot; data-position=&quot;float-left&quot; data-rel=&quot;aside&quot;&gt;&lt;span class=&quot;icon chevron-right icon-24&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;h1&gt;Page Header&lt;/h1&gt;
+    &lt;/div&gt;
+  &lt;div data-role=&quot;content&quot;&gt;
+    &lt;ul data-role=&quot;swipe-list&quot; data-ajax-location=&quot;ajax-swipe-list.php&quot; data-ajax-offset=&quot;18&quot; data-ajax-num-load=&quot;10&quot;&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-hijau.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/tomat2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Tomat&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-hijau2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/cabai-besar.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Cabai Besar&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/grapes.png&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kacang-hijau.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kacang Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/pisang.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Pisang&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/jagung.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Jagung&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kedondong4.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kedondong&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/cabai-besar-2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Cabai Besar&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kubis.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kubis&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/mangga.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Mangga&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/sawi-putih.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Sawi Putih&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/manggis.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Manggis&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/tomat1.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Tomat&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;  
+  &lt;/div&gt;</p>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+  <form method="post" action="test.php" target="_blank">
+    <input name="code" value="" type="hidden" />
+    <input name="submit" value="Test" onclick="copyCode(this, 'pre2')" type="submit" />
+  </form>
+</div>
+
+
+<h2>Swipe List with AJAX and API Functions</h2>
+<h3>Code</h3>
+<div class="code-container">
+  <pre id="pre3" class="code">&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, minimum-scale=1.0, maximum-scale=1.0&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/style.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/open-sans/index.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/icon.css&quot; /&gt;
+    &lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/ie.css&quot; /&gt;
+    &lt;![endif]--&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/jquery.unand.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    var mui;
+    window.onload = function()
+    {
+        mui = new mobileUI('aside swipe-list');
+    }
+    &lt;/script&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+[data-role=&quot;swipe-list&quot;] &gt; li &gt; div{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	text-align:center;
+}
+.tools{
+	padding:4px 0px;
+}
+&lt;/style&gt;
+&lt;title&gt;jQuery Unand&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;aside data-transition=&quot;left&quot; data-role=&quot;aside&quot; data-section=&quot;aside1&quot; data-aside-float=&quot;false&quot; data-active=&quot;false&quot; data-resize=&quot;true&quot;&gt;
+	   &lt;header data-title=&quot;Aside&quot; onclick=&quot;mui.closeAside('aside1')&quot;&gt;
+    &lt;nav data-float=&quot;right&quot;&gt;
+    &lt;a href=&quot;javascript:mui.closeAside('aside1')&quot;&gt;&lt;span class=&quot;icon remove&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;h3&gt;Aside Header&lt;/h3&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+    &lt;div data-role=&quot;content&quot;&gt;
+    Aside content here
+    &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;/aside&gt;
+
+    &lt;div data-role=&quot;header&quot; data-theme=&quot;a&quot; data-gradien=&quot;true&quot;&gt; 
+    &lt;a href=&quot;#aside1&quot; data-role=&quot;toolbar-icon&quot; data-position=&quot;float-left&quot; data-rel=&quot;aside&quot;&gt;&lt;span class=&quot;icon chevron-right icon-24&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;h1&gt;Page Header&lt;/h1&gt;
+    &lt;/div&gt;
+  &lt;div data-role=&quot;content&quot;&gt;
+    &lt;ul id=&quot;swipe-list-1&quot; data-role=&quot;swipe-list&quot; data-ajax-location=&quot;ajax-swipe-list.php&quot; data-ajax-offset=&quot;18&quot; data-ajax-num-load=&quot;10&quot;&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-hijau.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/tomat2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Tomat&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-hijau2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/cabai-besar.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Cabai Besar&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/grapes.png&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kacang-hijau.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kacang Hijau&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/pisang.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Pisang&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/jagung.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Jagung&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kedondong4.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kedondong&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/cabai-besar-2.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Cabai Besar&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/kubis.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Kubis&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/mangga.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Mangga&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/sawi-putih.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Sawi Putih&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/manggis.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Manggis&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/tomat1.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Tomat&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;
+            &lt;img src=&quot;../images/horticulture/anggur-merah.jpg&quot; width=&quot;100%&quot;&gt;
+            &lt;div class=&quot;tools&quot;&gt;Anggur Merah&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;  
+    &lt;div style=&quot;padding:10px 0px;&quot;&gt;
+    	&lt;a href=&quot;javascript:mui.wipeListPrev($('#swipe-list-1'));&quot;&gt;&lt;span class=&quot;icon icon-24 arrow-circle-alt-left&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    	&lt;a href=&quot;javascript:mui.wipeListNext($('#swipe-list-1'));&quot;&gt;&lt;span class=&quot;icon icon-24 arrow-circle-alt-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+  <form method="post" action="test.php" target="_blank">
+    <input name="code" value="" type="hidden" />
+    <input name="submit" value="Test" onclick="copyCode(this, 'pre3')" type="submit" />
+  </form>
+</div>
+

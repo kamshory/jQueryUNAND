@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/font/open-sans/index.css" />
+    <link rel="stylesheet" type="text/css" href="assets/font/icon.css" />
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="assets/css/ie.css" />
+    <![endif]-->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.unand.js"></script>
+    <script type="text/javascript">
+    var mui;
+    window.onload = function()
+    {
+        mui = new mobileUI('*');
+    }
+    </script>
+<title>jQuery Unand</title>
+</head>
+<body>
+    <div data-role="header" data-theme="a" data-gradien="true"> 
+    <h1>Page Header</h1>
+    </div>
+    <div data-role="tab" data-flexible="true">
+	<div data-role="tab-nav">
+        <a href="#tab1"><span class="icon icon-24 home"></span> Tab 1</a>
+        <a href="#tab2" data-active="true"><span class="icon icon-24 user"></span> Tab 2</a>
+        <a href="#tab3"><span class="icon icon-24 grid"></span> Tab 3</a>
+    </div>
+
+    <div data-role="tab-content" data-section="tab1">
+        <h1>Tab 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec justo quam, id tincidunt dolor.</p>
+        <ol>
+          <li>Lorem ipsum 1</li>
+          <li>Lorem ipsum 2
+            <ol>
+              <li>dolor sit amet 1</li>
+              <li>dolor sit amet 2</li>
+              <li>dolor sit amet 3</li>
+              <li>dolor sit amet 4</li>
+            </ol>
+          </li>
+          <li>Lorem ipsum 3</li>
+        </ol>
+    </div>
+  <div data-role="tab-content" data-section="tab2">
+    <h1>Tab 2</h1>
+      <p> Integer a tellus ut nunc elementum volutpat. Vivamus eu arcu lacus. Phasellus eu ipsum a metus ullamcorper mollis. Sed eget ligula enim. </p>
+    </div>
+    <div data-role="tab-content" data-section="tab3">
+      <h1>Tab 3</h1>
+      <p>Fusce tristique ipsum a tortor molestie nec interdum dolor iaculis. Nunc quis magna in odio interdum varius sed eu mauris.</p>
+    </div>
+    </div>
+    <div data-role="content">Flexible tab might be not supported some browser.</div>
+</body>
+</html>

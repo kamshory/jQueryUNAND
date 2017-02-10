@@ -1,0 +1,561 @@
+
+  <h1>Swipe Page</h1>
+  
+  
+  
+  <h2>Swipe Page with Static Aside</h2>
+  <h3>Code</h3>
+<div class="code-container">
+<pre  id="pre0" class="code">&lt;!DOCTYPE html&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/css/style.css" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/font/open-sans/index.css" /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/icon.css&quot; /&gt;
+    &lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/ie.css&quot; /&gt;
+    &lt;![endif]--&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.unand.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+    var mui;
+    window.onload = function()
+    {
+        mui = new mobileUI('aside swipe-page');
+    }
+    &lt;/script&gt;
+&lt;title&gt;jQuery Unand&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;aside data-transition="left" data-role="aside" data-section="aside1" data-aside-float="false" data-active="false"&gt;
+	   &lt;header data-title="Aside" onclick="mui.closeAside('aside1')"&gt;
+    &lt;nav data-float="right"&gt;
+    &lt;a href="javascript:mui.closeAside('aside1')"&gt;&lt;span class="icon remove"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;h3&gt;Aside Header&lt;/h3&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+    &lt;div data-role="content"&gt;
+    Aside content here
+    &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;/aside&gt;
+
+    &lt;div data-role="header" data-theme="a" data-gradien="true"&gt; 
+    &lt;a href="#aside1" data-role="toolbar-icon" data-position="float-left" data-rel="aside"&gt;&lt;span class="icon chevron-right icon-24"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;h1&gt;Page Header&lt;/h1&gt;
+    &lt;/div&gt;
+
+
+  &lt;div data-role=&quot;swipe-page&quot;&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#FFF;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 1&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 1&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#F66;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 2&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 2&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#9C6;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 3&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 3&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#3CC;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 4&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 4&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#9F9;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 5&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 5&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#CCF&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 6&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 6&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#F9C;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 7&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 7&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;/div&gt;</p>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<form method="post" action="test.php" target="_blank"><input name="code" value="" type="hidden"><input name="submit" value="Test" onclick="copyCode(this, 'pre0')" type="submit"></form>
+</div>
+
+
+  <h2>Swipe Page with Resizeable Page Aside</h2>
+  <h3>Code</h3>
+<div class="code-container">
+<pre  id="pre1" class="code">&lt;!DOCTYPE html&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/css/style.css" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/font/open-sans/index.css" /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/icon.css&quot; /&gt;
+    &lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/ie.css&quot; /&gt;
+    &lt;![endif]--&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.unand.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+    var mui;
+    window.onload = function()
+    {
+        mui = new mobileUI('aside swipe-page');
+    }
+    &lt;/script&gt;
+&lt;title&gt;jQuery Unand&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;aside data-transition="left" data-role="aside" data-section="aside1" data-aside-float="false" data-active="false" data-resize=&quot;true&quot;&gt;
+	   &lt;header data-title="Aside" onclick="mui.closeAside('aside1')"&gt;
+    &lt;nav data-float="right"&gt;
+    &lt;a href="javascript:mui.closeAside('aside1')"&gt;&lt;span class="icon remove"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;h3&gt;Aside Header&lt;/h3&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+    &lt;div data-role="content"&gt;
+    Aside content here
+    &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;/aside&gt;
+
+    &lt;div data-role="header" data-theme="a" data-gradien="true"&gt; 
+    &lt;a href="#aside1" data-role="toolbar-icon" data-position="float-left" data-rel="aside"&gt;&lt;span class="icon chevron-right icon-24"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;h1&gt;Page Header&lt;/h1&gt;
+    &lt;/div&gt;
+
+
+  &lt;div data-role=&quot;swipe-page&quot;&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#FFF;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 1&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 1&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#F66;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 2&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 2&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#9C6;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 3&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 3&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#3CC;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 4&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 4&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#9F9;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 5&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 5&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#CCF&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 6&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 6&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#F9C;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 7&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 7&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;/div&gt;</p>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<form method="post" action="test.php" target="_blank"><input name="code" value="" type="hidden"><input name="submit" value="Test" onclick="copyCode(this, 'pre1')" type="submit"></form>
+</div>
+
+  <h2>Swipe Page with API Functions</h2>
+  <h3>Code</h3>
+<div class="code-container">
+<pre  id="pre2" class="code">&lt;!DOCTYPE html&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/css/style.css" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/font/open-sans/index.css" /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/icon.css&quot; /&gt;
+    &lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/ie.css&quot; /&gt;
+    &lt;![endif]--&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.unand.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+    var mui;
+    window.onload = function()
+    {
+        mui = new mobileUI('aside swipe-page');
+    }
+    &lt;/script&gt;
+&lt;title&gt;jQuery Unand&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;aside data-transition="left" data-role="aside" data-section="aside1" data-aside-float="false" data-active="false" data-resize=&quot;true&quot;&gt;
+	   &lt;header data-title="Aside" onclick="mui.closeAside('aside1')"&gt;
+    &lt;nav data-float="right"&gt;
+    &lt;a href="javascript:mui.closeAside('aside1')"&gt;&lt;span class="icon remove"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;h3&gt;Aside Header&lt;/h3&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+    &lt;div data-role="content"&gt;
+    Aside content here
+    &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;/aside&gt;
+
+    &lt;div data-role="header" data-theme="a" data-gradien="true"&gt; 
+    &lt;a href="#aside1" data-role="toolbar-icon" data-position="float-left" data-rel="aside"&gt;&lt;span class="icon chevron-right icon-24"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;h1&gt;Page Header&lt;/h1&gt;
+    &lt;/div&gt;
+
+
+  &lt;div data-role=&quot;swipe-page&quot; id=&quot;swipe-page-1&quot;&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#FFF;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 1&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 1&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#F66;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 2&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 2&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#9C6;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 3&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 3&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#3CC;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 4&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 4&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#9F9;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 5&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 5&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#CCF&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 6&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 6&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#F9C;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 7&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 7&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;padding:10px 0px 0px 10px; &quot;&gt;      	
+  &lt;a href=&quot;javascript:mui.wipePagePrev($('#swipe-page-1'));&quot;&gt;&lt;span class=&quot;icon icon-24 arrow-circle-alt-left&quot;&gt;&lt;/span&gt;&lt;/a&gt;      	
+  &lt;a href=&quot;javascript:mui.wipePageNext($('#swipe-page-1'));&quot;&gt;&lt;span class=&quot;icon icon-24 arrow-circle-alt-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;      
+  &lt;/div&gt;
+  
+ &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<form method="post" action="test.php" target="_blank"><input name="code" value="" type="hidden"><input name="submit" value="Test" onclick="copyCode(this, 'pre2')" type="submit"></form>
+</div>
+
+
+  <h2>Swipe Page with Navigation Bar Using Selector and Callback Function</h2>
+  <h3>Code</h3>
+<div class="code-container">
+<pre  id="pre2" class="code">&lt;!DOCTYPE html&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/css/style.css" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/font/open-sans/index.css" /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/icon.css&quot; /&gt;
+    &lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/ie.css&quot; /&gt;
+    &lt;![endif]--&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.unand.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+    var mui;
+    window.onload = function()
+    {
+        mui = new mobileUI('*');
+    }
+    function setmark(index)
+    {
+        index = index+1;
+        $('#navbar-1 a').removeClass('item-selected');
+        $('#navbar-1 a:nth-child('+index+')').addClass('item-selected');
+    }
+    &lt;/script&gt;
+&lt;title&gt;jQuery Unand&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;aside data-transition="left" data-role="aside" data-section="aside1" data-aside-float="false" data-active="false" data-resize=&quot;true&quot;&gt;
+	   &lt;header data-title="Aside"&gt;
+    &lt;h3&gt;Aside Header&lt;/h3&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+    &lt;div data-role="content"&gt;
+    Aside content here
+    &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;/aside&gt;
+
+    &lt;div data-role="header" data-theme="a" data-gradien="true"&gt; 
+    &lt;a href="#aside1" data-role="toolbar-icon" data-position="float-left" data-rel="aside" data-behavior=&quot;alternate&quot;&gt;&lt;span class="icon chevron-right icon-24"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;h1&gt;Page Header&lt;/h1&gt;
+    &lt;/div&gt;
+
+    &lt;nav id=&quot;navbar-1&quot; data-role=&quot;navbar&quot; data-mark-selected=&quot;true&quot; data-rel=&quot;swipe-page&quot; data-target-selector=&quot;#swipe-page-1&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;        
+        &lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;6&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;7&lt;/a&gt;
+    &lt;/nav&gt;
+
+  &lt;div data-role=&quot;swipe-page&quot; id=&quot;swipe-page-1&quot; data-callback=&quot;setmark&quot;&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#FFF;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 1&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 1&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#F66;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 2&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 2&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#9C6;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 3&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 3&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#3CC;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 4&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 4&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#9F9;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 5&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 5&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#CCF&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 6&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 6&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#F9C;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 7&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 7&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;/div&gt;
+
+ &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<form method="post" action="test.php" target="_blank"><input name="code" value="" type="hidden"><input name="submit" value="Test" onclick="copyCode(this, 'pre2')" type="submit"></form>
+</div>
+
+
+
+
+  <h2>Swipe Page with Navigation Bar Using Section and Callback Function</h2>
+  <h3>Code</h3>
+<div class="code-container">
+<pre  id="pre2" class="code">&lt;!DOCTYPE html&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/css/style.css" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="assets/font/open-sans/index.css" /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/icon.css&quot; /&gt;
+    &lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/ie.css&quot; /&gt;
+    &lt;![endif]--&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="assets/js/jquery.unand.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+    var mui;
+    window.onload = function()
+    {
+        mui = new mobileUI('*');
+    }
+    function setmark(index)
+    {
+        index = index+1;
+        $('#navbar-1 a').removeClass('item-selected');
+        $('#navbar-1 a:nth-child('+index+')').addClass('item-selected');
+    }
+    &lt;/script&gt;
+&lt;title&gt;jQuery Unand&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;aside data-transition="left" data-role="aside" data-section="aside1" data-aside-float="false" data-active="false" data-resize=&quot;true&quot;&gt;
+	   &lt;header data-title="Aside"&gt;
+    &lt;h3&gt;Aside Header&lt;/h3&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+    &lt;div data-role="content"&gt;
+    Aside content here
+    &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;/aside&gt;
+
+    &lt;div data-role="header" data-theme="a" data-gradien="true"&gt; 
+    &lt;a href="#aside1" data-role="toolbar-icon" data-position="float-left" data-rel="aside" data-behavior=&quot;alternate&quot;&gt;&lt;span class="icon chevron-right icon-24"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;h1&gt;Page Header&lt;/h1&gt;
+    &lt;/div&gt;
+
+    &lt;nav id=&quot;navbar-1&quot; data-role=&quot;navbar&quot; data-mark-selected=&quot;true&quot; data-rel=&quot;swipe-page&quot; href=&quot;#swipe-page-1&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;        
+        &lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;6&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;7&lt;/a&gt;
+    &lt;/nav&gt;
+
+  &lt;div data-role=&quot;swipe-page&quot; data-section=&quot;swipe-page-1&quot; data-callback=&quot;setmark&quot;&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#FFF;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 1&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 1&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#F66;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 2&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 2&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#9C6;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 3&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 3&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#3CC;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 4&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 4&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#9F9;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 5&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 5&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#CCF&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 6&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 6&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+  &lt;div style=&quot;background-color:#F9C;&quot;&gt;
+  &lt;h3&gt;Lorem Ipsum 7&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit 7&lt;/p&gt;
+  &lt;p&gt;Wipe me left or right&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;/div&gt;
+
+ &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<form method="post" action="test.php" target="_blank"><input name="code" value="" type="hidden"><input name="submit" value="Test" onclick="copyCode(this, 'pre2')" type="submit"></form>
+</div>
+

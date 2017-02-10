@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/font/open-sans/index.css" />
+    <link rel="stylesheet" type="text/css" href="assets/font/icon.css" />
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="assets/css/ie.css" />
+    <![endif]-->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.unand.js"></script>
+    <script type="text/javascript">
+    var mui;
+    window.onload = function()
+    {
+        mui = new mobileUI('*');
+		
+		
+		
+		
+		
+		$('#foo').bind('resize', function(){
+			// adjust #foo's dimensions
+			console.log('resize');
+		})
+		
+		$(document.body).trigger("resize");
+		
+		
+		/*
+		$('[data-role="mui-slider"]').wipetouch({
+			wipeLeft: function(result) { 
+			},
+			wipeRight: function(result) { 
+			},
+			wipeMove: function(result) { 
+			document.title = result.curX;
+			}
+		});
+		$('.mui-slider-control').wipetouch({
+			wipeLeft: function(result) { 
+			},
+			wipeRight: function(result) { 
+			},
+			wipeMove: function(result) { 
+				var curX = parseFloat(result.curX);
+				var offsetX = parseFloat($(result.node).parent().offset().left);
+				var width = parseFloat($(result.node).parent().width());
+				
+				var percent = 100*(curX-offsetX)/width;
+				document.title = percent;
+				result.node.css({'margin-left':percent+'%'});
+			},
+			moveX:1
+		});
+		*/
+		$(document).on('dragover', '.mui-slider-control', function(e){
+				var curX = parseFloat(e.clientX);
+				var offsetX = parseFloat($(this).parent().offset().left);
+				var width = parseFloat($(this).parent().width());
+				
+				var percent = 100*(curX-offsetX)/width;
+				document.title = percent;
+				result.node.css({'margin-left':percent+'%'});
+			
+		});								
+
+		function handleDragStart(e) {
+		}
+		function handleDrop(e) {
+		  // this / e.target is current target element.
+		
+		  if (e.stopPropagation) {
+			e.stopPropagation(); // stops the browser from redirecting.
+		  }
+		
+		  // See the section on the DataTransfer object.
+		
+		  return false;
+		}
+		
+		function handleDragEnd(e) {
+		  // this/e.target is the source node.
+		
+		  [].forEach.call(cols, function (col) {
+			col.classList.remove('over');
+		  });
+		}
+		function handleDragOver(e) {
+			document.title = e.clientX;
+			alert(e);
+		  if (e.preventDefault) {
+			e.preventDefault(); // Necessary. Allows us to drop.
+		  }
+		
+		  e.dataTransfer.dropEffect = 'move';  // See the section on the DataTransfer object.
+		
+		  return false;
+		}
+function handleDragEnter(e) {
+  // this / e.target is the current hover target.
+  this.classList.add('over');
+}
+
+function handleDragLeave(e) {
+  this.classList.remove('over');  // this / e.target is previous target element.
+}		
+		var cols = document.querySelectorAll('.mui-slider-control');
+		[].forEach.call(cols, function(col) {
+		  col.addEventListener('dragstart', handleDragStart, false);
+		  col.addEventListener('dragenter', handleDragEnter, false)
+		  col.addEventListener('dragover', handleDragOver, false);
+		  col.addEventListener('dragleave', handleDragLeave, false);
+		  col.addEventListener('drop', handleDrop, false);
+		  col.addEventListener('dragend', handleDragEnd, false);
+		});
+
+    }
+    </script>
+    <style type="text/css">
+	[data-role="mui-slider"]
+	{
+		border:1px solid #DDDDDD;
+		padding:4px;
+		width:500px;
+	}
+	.mui-slider-control{
+		position:relative;
+		width:20px;
+		height:20px;
+		border-radius:10px;
+		background-color:#06F;
+		margin-left:30%;
+		margin-bottom:-20px;
+	}
+	.mui-slider-bar{
+		height:10px;
+		width:100%;
+		border-radius:3px;
+		background-color:#EEEEEE;
+	}
+	</style>
+<title>jQuery Unand</title>
+</head>
+<body>
+    <div data-role="header" data-theme="a" data-gradien="true"> 
+    <h1>Page Header</h1>
+    </div>
+    <div id="foo" style="width:10%; background-color:#09C;">aa</div>
+    <div data-role="content">
+        <div data-role="mui-slider">
+            <div class="mui-slider-control" draggable="true"></div>
+            <div class="mui-slider-bar"></div>
+        </div>
+    </div>
+</body>
+</html>

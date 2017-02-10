@@ -1,0 +1,2 @@
+@charset "utf-8";
+input[type="submit"],input[type="reset"],input[type="button"],button{border-radius:0px;} [data-table-type="two-cols"] tr td:nth-child(1){width:35%;} [data-table-type="two-cols"] tr td:nth-child(2){width:65%;}

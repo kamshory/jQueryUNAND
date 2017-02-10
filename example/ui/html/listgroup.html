@@ -1,0 +1,222 @@
+<h1>List Group</h1>
+<h2>Default List Group</h2>
+<h3>Code</h3>
+<div class="code-container">
+<pre  id="pre0" class="code">
+&lt;!DOCTYPE html&gt;
+  &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+  &lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, minimum-scale=1.0, maximum-scale=1.0&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/style.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/open-sans/index.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/icon.css&quot; /&gt;
+  &lt;!--[if IE]&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/ie.css&quot; /&gt;
+  &lt;![endif]--&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/jquery.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/jquery.unand.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+  var mui;
+  window.onload = function()
+  {
+  mui = new mobileUI('*');
+  }
+  &lt;/script&gt; 
+  &lt;title&gt;jQuery Unand&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;div data-role=&quot;header&quot; data-theme=&quot;a&quot; data-gradien=&quot;true&quot;&gt; 
+  &lt;h1&gt;Page Header&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;div data-role=&quot;content&quot;&gt;
+  &lt;h1&gt;List Group&lt;/h1&gt;
+  &lt;ul data-role=&quot;listgroup&quot;&gt;
+  &lt;li&gt;
+  &lt;h3&gt;Desktop Operating System&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Windows&lt;/li&gt;
+  &lt;li&gt;Linux&lt;/li&gt;
+  &lt;li&gt;OS X&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;h3&gt;Mobile Operating System&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Windows Phone&lt;/li&gt;
+  &lt;li&gt;Android&lt;/li&gt;
+  &lt;li&gt;iOS&lt;/li&gt;
+  &lt;li&gt;Bada&lt;/li&gt;
+  &lt;li&gt;Symbian&lt;/li&gt;
+  &lt;li&gt;Firefox OS&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;h3&gt;Web Server&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Apache&lt;/li&gt;
+  &lt;li&gt;Internet Informastion Service&lt;/li&gt;
+  &lt;li&gt;nginX &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/div&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;
+</pre>
+<form method="post" action="test.php" target="_blank"><input name="code" value="" type="hidden"><input name="submit" value="Test" onclick="copyCode(this, 'pre1')" type="submit"></form>
+</div>
+
+
+
+<h2>List Group with Filter</h2>
+<h3>Code</h3>
+<div class="code-container">
+<pre  id="pre0" class="code">
+&lt;!DOCTYPE html&gt;
+  &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+  &lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, minimum-scale=1.0, maximum-scale=1.0&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/style.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/open-sans/index.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/icon.css&quot; /&gt;
+  &lt;!--[if IE]&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/ie.css&quot; /&gt;
+  &lt;![endif]--&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/jquery.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/jquery.unand.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+  var mui;
+  window.onload = function()
+  {
+  mui = new mobileUI('*');
+  }
+  &lt;/script&gt; 
+  &lt;title&gt;jQuery Unand&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;div data-role=&quot;header&quot; data-theme=&quot;a&quot; data-gradien=&quot;true&quot;&gt; 
+  &lt;h1&gt;Page Header&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;div data-role=&quot;content&quot;&gt;
+  &lt;h1&gt;List Group with Filter&lt;/h1&gt;
+  &lt;ul data-role=&quot;listgroup&quot; data-filter=&quot;true&quot; data-filter-placeholder=&quot;Search item&quot; data-filter-focus=&quot;true&quot;&gt;
+  &lt;li&gt;
+  &lt;h3&gt;Server-Side Script&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;ul&gt;
+  &lt;li&gt;PHP&lt;/li&gt;
+  &lt;li&gt;JSP&lt;/li&gt;
+  &lt;li&gt;ASP&lt;/li&gt;
+  &lt;li&gt;NodeJS&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;h3&gt;Client-Side Script&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;ul&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+  &lt;li&gt;VBScript&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;h3&gt;Database&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;ul&gt;
+  &lt;li&gt;MySQL&lt;/li&gt;
+  &lt;li&gt;SQL Server&lt;/li&gt;
+  &lt;li&gt;PostgreSQL&lt;/li&gt;
+  &lt;li&gt;Oracle&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/div&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;
+</pre>
+<form method="post" action="test.php" target="_blank"><input name="code" value="" type="hidden"><input name="submit" value="Test" onclick="copyCode(this, 'pre1')" type="submit"></form>
+</div>
+
+<h2>List Group with Hyperlink</h2>
+<div class="code-container">
+<pre  id="pre0" class="code">
+&lt;!DOCTYPE html&gt;
+  &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+  &lt;head&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, minimum-scale=1.0, maximum-scale=1.0&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/style.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/open-sans/index.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/font/icon.css&quot; /&gt;
+  &lt;!--[if IE]&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;assets/css/ie.css&quot; /&gt;
+  &lt;![endif]--&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/jquery.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;assets/js/jquery.unand.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+  var mui;
+  window.onload = function()
+  {
+  mui = new mobileUI('*');
+  }
+  &lt;/script&gt; 
+  &lt;title&gt;jQuery Unand&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;div data-role=&quot;header&quot; data-theme=&quot;a&quot; data-gradien=&quot;true&quot;&gt; 
+  &lt;h1&gt;Page Header&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;div data-role=&quot;content&quot;&gt;
+  &lt;h1&gt;List Group with Hyperlink&lt;/h1&gt;
+  &lt;ul data-role=&quot;listgroup&quot;&gt;
+  &lt;li&gt;
+  &lt;h3&gt;Image Format&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;JPEG&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;PNG&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;GIF&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;h3&gt;Audio Format&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;WAV&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;MP3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;WMA&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;h3&gt;Video Format&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;AVI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;MP4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;MPEG&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;WMV&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+</pre>
+<form method="post" action="test.php" target="_blank"><input name="code" value="" type="hidden"><input name="submit" value="Test" onclick="copyCode(this, 'pre1')" type="submit"></form>
+</div>
+
